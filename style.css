@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+}
+
+header {
+}
+
+main {
+}
+
+footer {
+}
+
+@media screen and (max-width: 768px) {
+  .artwork {
+    flex: 0 0 48%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .artwork {
+    flex: 0 0 100%;
+  }
+}
