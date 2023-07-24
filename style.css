@@ -14,6 +14,7 @@ main {
 }
 
 footer {
+  background-color: gray;
 }
 
 @media screen and (max-width: 768px) {
