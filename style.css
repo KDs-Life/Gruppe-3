@@ -26,10 +26,8 @@ section {
 div p {
   color: #ffffff;
 }
-img {
-  border: 1px solid rgb(88, 86, 250);
-  max-width: 100%;
-  height: auto;
+
+footer {
 }
 @media screen and (max-width: 768px) {
   .artwork {
