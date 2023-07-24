@@ -3,12 +3,33 @@
   padding: 0;
 }
 
-html,
-body {
+html, body {
 }
 
-header {
+.logo > img{
+  width: 10px; 
 }
+
+.warenkorb > img {
+  width: 10px;
+  }
+
+nav{
+  padding: 1px;
+  background-color: rgb(70, 59, 59);
+  color: rgb(145, 145, 145);
+  font-size: 13px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  }
+
+  .search > img{
+    width: 10px; 
+  }
 
 main {
 }
