@@ -28,6 +28,18 @@ div p {
 }
 
 footer {
+
+
+}
+
+footer .section {
+  line-height: 1.33337;
+  font-weight: 400;  
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 20px;
+
+
 }
 @media screen and (max-width: 768px) {
   .artwork {
