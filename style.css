@@ -1,45 +1,103 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
 }
+
+/* style für den Hauptbereich */
 main {
-  border: 5px solid rgb(0, 255, 13);
+  max-width: 1200px;
+  margin: auto;
   padding: 20px;
 }
+
+/* Style für beide sections */
 section {
-  border: 1px solid red;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
+
+/* Style für die parent */
 .parent {
-  border: 1px solid rgb(0, 255, 13);
-  background-color: #000000;
-  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
 .child {
-  border: 1px solid rgb(128, 0, 89);
-  background-color: #ffffff;
-  padding: 10px;
-  margin-bottom: 5px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-div p {
-  color: #ffffff;
+
+/* Stile für den Text innerhalb des child-Containers */
+.child p {
+  border: solid 1px red;
+  border-radius: 5px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Hover-Effekt für child-Container */
+.child:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s;
+  box-shadow: 1px black;
+}
+/* Style für Bilder */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Hover-Effekt für Bilder */
+img:hover {
+  transform: scale(1.01);
+  transition: transform 0.3s ease;
+  opacity: 90%;
+}
+
+/* Stile für Videos */
+video {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* Hover-Effekt für Videos */
+video:hover {
+  filter: brightness(60%);
+  transition: filter 0.05s ease;
+}
+
+/* Stile für Links */
+a {
+  color: #0078d4;
+  text-decoration: none;
+}
+
+/* Hover-Effekt für Links */
+a:hover {
+  text-decoration: underline;
+  transition: text-decoration 0.3s ease;
 }
 
 footer {
-
-
+  border: 1px solid red;
 }
 
 footer .section {
   line-height: 1.33337;
-  font-weight: 400;  
+  font-weight: 400;
   display: flex;
   flex-wrap: nowrap;
   padding-top: 20px;
-
-
 }
 @media screen and (max-width: 768px) {
   .artwork {
