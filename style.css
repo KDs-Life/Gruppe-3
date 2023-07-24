@@ -1,21 +1,36 @@
-* {
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
 }
-
-html,
-body {
-}
-
-header {
-}
-
 main {
+  border: 5px solid rgb(0, 255, 13);
+  padding: 20px;
 }
-
-footer {
+section {
+  border: 1px solid red;
+  margin-bottom: 20px;
 }
-
+.parent {
+  border: 1px solid rgb(0, 255, 13);
+  background-color: #000000;
+  padding: 10px;
+}
+.child {
+  border: 1px solid rgb(128, 0, 89);
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+div p {
+  color: #ffffff;
+}
+img {
+  border: 1px solid rgb(88, 86, 250);
+  max-width: 100%;
+  height: auto;
+}
 @media screen and (max-width: 768px) {
   .artwork {
     flex: 0 0 48%;
