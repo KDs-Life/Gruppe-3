@@ -127,6 +127,7 @@ a:hover {
 footer {
   margin: 0 auto;
   max-width: 980px;
+  font-size: 13px;
   padding: 0 22px;
   padding-left: max(22px, env(safe-area-inset-left));
   padding-right: max(22px, env(safe-area-inset-right));
