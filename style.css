@@ -3,23 +3,23 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
-  color: #333;
+  background-color: #dfdede;
+  color: #000000;
 }
 
-
-html, body {
+html,
+body {
 }
 
-.logo > img{
-  width: 10px; 
+.logo > img {
+  width: 10px;
 }
 
 .warenkorb > img {
   width: 10px;
-  }
+}
 
-nav{
+nav {
   padding: 1px;
   background-color: rgb(70, 59, 59);
   color: rgb(145, 145, 145);
@@ -30,68 +30,63 @@ nav ul {
   display: flex;
   list-style: none;
   justify-content: space-around;
-  }
+}
 
-  .search > img{
-    width: 10px; 
-  }
+.search > img {
+  width: 10px;
+}
 
-/* style für den Hauptbereich */
 main {
-  max-width: 1200px;
+  /* background-color: #dddada; */
+  max-width: 100%;
   margin: auto;
   padding: 20px;
 }
 
-/* Style für beide sections */
+/* Stile für die Abschnitte */
 section {
   margin-bottom: 30px;
 }
 
-/* Style für die parent */
+/* Stile für die Container der Inhalte */
 .parent {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.child {
+/* Stile für die einzelnen Inhaltsblöcke */
+.outer {
+  /* width: 100%; */
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 5pxrgb(189, 0, 0) */
+  background-color: #ffffff;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 }
 
-/* Stile für den Text innerhalb des child-Containers */
+/* Stile für die Überschriften */
+.child h2 {
+  /* border: 1px solid red; */
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+/* Stile für die Textabsätze */
 .child p {
-  border: solid 1px red;
-  border-radius: 5px;
-  margin: 0;
   font-size: 16px;
   line-height: 1.6;
-  color: #333;
+  color: #000000;
+  margin-bottom: 10px;
 }
 
-/* Hover-Effekt für child-Container */
-.child:hover {
-  transform: translateY(-5px);
-  transition: transform 0.3s;
-  box-shadow: 1px black;
-}
-/* Style für Bilder */
+/* Stile für Bilder */
 img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
-  border-radius: 5px;
-
-}
-
-/* Hover-Effekt für Bilder */
-img:hover {
-  transform: scale(1.01);
-  transition: transform 0.3s ease;
-  opacity: 90%;
+  /* border-radius: 5px; */
 }
 
 /* Stile für Videos */
@@ -100,22 +95,32 @@ video {
   border-radius: 5px;
 }
 
-/* Hover-Effekt für Videos */
-video:hover {
-  filter: brightness(60%);
-  transition: filter 0.05s ease;
-}
-
 /* Stile für Links */
 a {
   color: #0078d4;
   text-decoration: none;
 }
 
-/* Hover-Effekt für Links */
+/* Hover-Effekte */
+.outer:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+img:hover {
+  /* transform: scale(1.05);
+  transition: transform 0.3s ease; */
+  opacity: 0.9;
+}
+
+video:hover {
+  filter: brightness(90%);
+  transition: filter 0.2s ease;
+}
+
 a:hover {
   text-decoration: underline;
-  transition: text-decoration 0.3s ease;
 }
 
 /* START: footer*/
@@ -123,33 +128,32 @@ footer {
   margin: 0 auto;
   max-width: 980px;
   padding: 0 22px;
-  padding-left: max(22px,env(safe-area-inset-left));
-  padding-right: max(22px,env(safe-area-inset-right));
+  padding-left: max(22px, env(safe-area-inset-left));
+  padding-right: max(22px, env(safe-area-inset-right));
 }
 
 .column {
   flex-basis: 25%;
 }
 
-.colum-section {  
+.colum-section {
   box-sizing: content-box;
   margin: 0;
 }
 
-.column-section>h3 {
+.column-section > h3 {
   padding-bottom: 0px;
 }
 
-.column-section>ul {
+.column-section > ul {
   margin-right: 20px;
   list-style: none;
   padding: 0;
 }
 
-.column-section>ul>li {
+.column-section > ul > li {
   margin-bottom: 0.8em;
 }
-
 
 .footer-shop {
   font-size: 0.7em;
@@ -160,9 +164,9 @@ footer {
   float: right;
 }
 
-.sitemap>nav {
+.sitemap > nav {
   font-size: 0.85em;
-  line-height: 1.33337; 
+  line-height: 1.33337;
   display: flex;
   flex-wrap: nowrap;
   padding-top: 20px;
@@ -174,10 +178,10 @@ footer {
   font-size: 1em;
 }
 
-.links>li{
+.links > li {
   list-style: none;
   margin: 0;
-  display:inline;
+  display: inline;
 }
 
 /* END: footer */
