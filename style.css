@@ -132,6 +132,11 @@ footer {
   padding-right: max(22px, env(safe-area-inset-right));
 }
 
+div > .nav {
+  font-size: 1em;
+  background-color: black;
+}
+
 .column {
   flex-basis: 25%;
 }
@@ -164,7 +169,8 @@ footer {
   float: right;
 }
 
-.sitemap > nav {
+.nav {
+
   font-size: 0.85em;
   line-height: 1.33337;
   display: flex;
