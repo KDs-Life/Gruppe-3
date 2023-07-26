@@ -67,13 +67,13 @@ Aufgabe **Start** abgeschlossen
 		git commit -m 'was wurde gemacht'
 ***lokal***		um mögliche änderungen, während man gearbeitet hat, aus der branch **main** auf seinem lokalen rechner aktuell zu halten sollte man vor einem push in das repository folgenden befehl ausführen
 
-	git pull origin main
-
-	(anmerkung: dies kann zu konflikten führen die man dann lokal lösen muss, alleine oder im team,
-	"main" sollte als quelle vorrang haben)
+		git pull origin main
+	
+		(anmerkung: dies kann zu konflikten führen die man dann lokal lösen muss, alleine oder im team,
+		"main" sollte als quelle vorrang haben)
 ***lokal***		um die lokalen inhalte aus der staging-area in das remote repository zu übertragen wird folgender befehl benutzt
 
-	git push origin *branch*
+		git push origin *branch*
 ***online***	im browser auf github sollten nun unter ***git-url*** die inhalte in der **branch** auftauchen
 
 ***online***	um die änderungen von **branch** in die branch **main** zu überführen ist ein merge request (pull request) von **branch** zu **main** nötig anmerkung: dieser kann zu konflikten führen
@@ -105,13 +105,12 @@ Aufgabe **Start** abgeschlossen
 		git commit -m 'was wurde gemacht'
 ***lokal***		um mögliche änderungen, während man gearbeitet hat, aus der branch **main** auf seinem lokalen rechner aktuell zu halten sollte man vor einem push in das repository folgenden befehl ausführen
 
-	git pull origin main 
+		git pull origin main 
 
-	(anmerkung: dies kann zu konflikten führen die man dann lokal lösen muss,
-	"main" sollte als quelle vorrang haben)
+		(anmerkung: dies kann zu konflikten führen die man dann lokal lösen muss,"main" sollte als quelle vorrang haben)
 ***lokal***		um die lokalen inhalte aus der staging-area in die **branch** des remote repository zu übertragen wird folgender befehl benutzt
 
-	git push origin *branch*
+		git push origin *branch*
 ***online***	im browser auf github sollten nun die inhalte in der branch **branch** auftauchen
 
 ***online***	um die änderungen von  **branch** in die branch **main** zu überführen ist ein *merge request* (pull request) von **branch** zu **main** nötig anmerkung: dieser merge request kann zu konflikten führen
