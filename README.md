@@ -67,14 +67,14 @@ Aufgabe **Start** abgeschlossen
 	"main" sollte als quelle vorrang haben)
 ***lokal***		um die lokalen inhalte aus der staging-area in das remote repository zu übertragen wird folgender befehl benutzt
 
-	git push origin *branchname*
-***online***	im browser auf github sollten nun unter ***git-url*** die inhalte in der branch *branchname* auftauchen
+	git push origin *branch*
+***online***	im browser auf github sollten nun unter ***git-url*** die inhalte in der **branch** auftauchen
 
-***online***	um die änderungen von *branchname* in die branch *main* zu überführen ist ein merge request (pull request) von *branchname* zu "main" nötig anmerkung: dieser kann zu konflikten führen
+***online***	um die änderungen von **branch** in die branch **main** zu überführen ist ein merge request (pull request) von **branch** zu **main** nötig anmerkung: dieser kann zu konflikten führen
 
 ***online***	falls es konflikte gibt müssen diese in einem review (alleine/team) gelöst werden
 
-***online***	falls keine konflikte entstehen kann der merge direkt zu "main" durchgeführt werden und die anliefernde branch gelöscht werden. anmerkung: die lokale branch *branchname* ist beim developer noch vorhanden!
+***online***	falls keine konflikte entstehen kann der merge direkt zu **main** durchgeführt werden und die anliefernde branch gelöscht werden. anmerkung: die lokale branch **branch** ist beim developer noch vorhanden!
 
 ## Change (developerA und developerB)
 ***lokal***		arbeitsordner existiert lokal noch! diesen in vscode öffnen
@@ -103,9 +103,9 @@ Aufgabe **Start** abgeschlossen
 
 	(anmerkung: dies kann zu konflikten führen die man dann lokal lösen muss,
 	"main" sollte als quelle vorrang haben)
-***lokal***		um die lokalen inhalte aus der staging-area in das remote repository zu übertragen wird folgender befehl benutzt
+***lokal***		um die lokalen inhalte aus der staging-area in die **branch** des remote repository zu übertragen wird folgender befehl benutzt
 
-	git push origin *branchname*
+	git push origin *branch*
 ***online***	im browser auf github sollten nun die inhalte in der branch **branch** auftauchen
 
 ***online***	um die änderungen von  **branch** in die branch **main** zu überführen ist ein *merge request* (pull request) von **branch** zu **main** nötig anmerkung: dieser merge request kann zu konflikten führen
