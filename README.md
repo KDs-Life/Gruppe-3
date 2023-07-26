@@ -42,6 +42,12 @@ Aufgabe **Start** abgeschlossen
 		git clone git-url
 		
 		(main inhalte aus dem repository sind nun lokal vorhanden)
+***lokal***		in das repository Verzeichnis wechseln, im Terminal via
+
+		cd *repository*
+***local***		durch das klonen ist auch ein git-index vorhanden. ebenso ist eine **remote** Quelle vorhanden
+
+		git remote -v
 ***lokal***		um an seiner aufgabe zu arbeiten erstellt man eine **branch** mit einem aussagekräftigen branchnamen
 
 		git checkout -b *branch*
@@ -61,7 +67,7 @@ Aufgabe **Start** abgeschlossen
 		git commit -m 'was wurde gemacht'
 ***lokal***		um mögliche änderungen, während man gearbeitet hat, aus der branch **main** auf seinem lokalen rechner aktuell zu halten sollte man vor einem push in das repository folgenden befehl ausführen
 
-	git pull origin main 
+	git pull origin main
 
 	(anmerkung: dies kann zu konflikten führen die man dann lokal lösen muss, alleine oder im team,
 	"main" sollte als quelle vorrang haben)
