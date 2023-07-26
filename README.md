@@ -5,7 +5,9 @@
 ### Start as "repository owner" oder Teamlead
 
 ***online***	im browser auf github repository erstellen und die github-url **_git-url_** des erstellten repository in die zwischenablage kopieren (ssh/https)
+
 ***lokal***		lokalen arbeitsordner erstellen und in vscode öffnen
+
 ***lokal***		in vscode, im terminal im lokalen arbeitsordner einen initialen befehl ausführen 
 
 		git init
