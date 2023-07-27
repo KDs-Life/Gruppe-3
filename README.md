@@ -68,13 +68,13 @@ Aufgabe **Start** abgeschlossen
 		// mehr infos zu commit messages -> https://www.conventionalcommits.org/de/
 ***lokal***		um mögliche Änderungen, während man gearbeitet hat, aus der Branch *main* auf seinem lokalen Rechner aktuell zu halten sollte man vor einem `git push` in das remote repository den folgenden Befehl ausführen
 
-	git pull origin main 
+		git pull origin main 
 
-	// dies kann zu Konflikten führen die man dann lokal lösen muss, alleine oder im team
-	// "main" sollte als quelle vorrang haben
+		// dies kann zu Konflikten führen die man dann lokal lösen muss, alleine oder im team
+		// "main" sollte als quelle vorrang haben
 ***lokal***		um die lokalen Inhalte aus der staging-area in das remote repository zu übertragen wird folgender Befehl benutzt
 
-	git push origin *branch*
+		git push origin *branch*
 ***online***	im Browser auf GitHub sollten nun unter `git-url` die Inhalte in der branch *branch* auftauchen
 
 ***online***	um die Änderungen von *branch* in die branch *main* zu überführen ist ein `merge request (pull request)` von *branch* zu "main" nötig.  _Anmerkung_: dieser kann zu Konflikten führen.
@@ -106,13 +106,13 @@ Aufgabe **Start** abgeschlossen
 		git commit -m 'was wurde gemacht'
 ***lokal***		um mögliche Änderungen, während man gearbeitet hat, aus der branch *main* auf seinem lokalen Rechner aktuell zu halten sollte man vor einem push in das remote repository folgenden Befehl ausführen
 
-	git pull origin main 
+		git pull origin main 
 
-	// dies kann zu Konflikten führen die man dann lokal lösen muss
-	// "main" sollte als Quelle vorrang haben
+		// dies kann zu Konflikten führen die man dann lokal lösen muss
+		// "main" sollte als Quelle vorrang haben
 ***lokal***		um die lokalen Inhalte aus der staging-area in das remote repository zu übertragen wird folgender Befehl benutzt
 
-	git push origin *branch*
+		git push origin *branch*
 ***online***	im Browser auf GitHub sollten nun die Inhalte in der branch *branch* auftauchen
 
 ***online***	um die Änderungen von  *branch* in die branch *main* zu überführen ist ein *merge request* (pull request) von *branch* zu *main* nötig. _Anmerkung_: dieser merge request kann zu Konflikten führen
