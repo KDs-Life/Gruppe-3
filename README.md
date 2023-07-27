@@ -1,120 +1,122 @@
 
+
+
+
 # Gruppe-3 HELPFILE
-**TODO**: Rechtschreibung, pleaaaaaaaaaase
 ## git workflow (wip)
 ### Start as "repository owner" oder Teamlead
 
-***online***	im browser auf github repository erstellen und die github-url **_git-url_** des erstellten repository in die zwischenablage kopieren (ssh/https)
+***online***	im Browser auf GitHub das Repository erstellen und die github-url `git-url` des erstellten Repository in die Zwischenablage kopieren (ssh)
 
-***lokal***		lokalen arbeitsordner erstellen und in vscode öffnen
+***lokal***		lokalen Arbeitsordner erstellen und in vscode öffnen
 
-***lokal***		in vscode, im terminal im lokalen arbeitsordner einen initialen befehl ausführen 
+***lokal***		in vscode, im Terminal (Git-Bash oder term) im lokalen Arbeitsordner einen initialen Befehl ausführen 
 
 		git init
 	
-		(wenn man lokal dem github-standard folgt wird die branch "main" erstellt)
-***lokal***		inhalte erstellen und dem lokalen git-index hinzufügen mit 
+		// wenn man lokal dem github-standard folgt wird die branch "main" erstellt
+***lokal***		Inhalte erstellen und dem lokalen git-index hinzufügen mit 
 	
 		git add *option*
 		
-		*option* "." für alles 
-		oder selektiv einzelne Dateienamen
-***lokal***		die im git-index vorhandenen inhalte werden mit dem folgenden befehl  in ihrem zustand als _fertig_ bestätigt und somit in die staging-area verschoben
+		// *option* "." für alles oder selektiv mit einzelnen Dateienamen
+***lokal***		die im git-index vorhandenen Inhalte werden mit dem folgenden Befehl  in ihrem zustand als _fertig_ bestätigt und somit in die staging-area verschoben
 
-		git commit -m 'Initial commit'
+		git commit -m 'initial commit'
 
-		(dies nennt man staging)
-***lokal***		das github repository als remote referenz hinzufügen mit 
+		// dies nennt man staging
+***lokal***		das GitHub repository als remote Referenz hinzufügen mit 
 
 		git remote add git-url
-***lokal***		die lokalen inhalte, die in der staging area sind, in das remote repository schieben mit 
+		
+		// die remote Referenzen kann man mit 'git remote -v' anzeigen
+***lokal***		die lokalen Inhalte, die in der staging area sind, in das remote repository schieben mit 
 
 		git push -u -f origin main
-***online***	im browser sollten nun die inhalte im github repository unter ***git-url*** erscheinen
+***online***	im Browser sollten nun die Inhalte im GitHub Repository unter `git-url` erscheinen
+
+Nun die Collaborators zur Zusammenarbeit auf GitHub einladen und dabei Rechte vergeben.
 
 Aufgabe **Start** abgeschlossen
 
-## Cowork (developerA und developerB)
-***lokal***		arbeitsordner erstellen und in vscode öffnen
+## Collaborators (developerA und developerB)
 
-***lokal***		in vscode, im terminal im arbeitsordner das repository klonen mit
+***lokal***		Arbeitsordner erstellen und in vscode öffnen
+
+***lokal***		in vscode, im Terminal das remote repository klonen mit
 
 		git clone git-url
 		
-		(main inhalte aus dem repository sind nun lokal vorhanden)
-***lokal***		in das repository Verzeichnis wechseln, im Terminal via
-
-		cd *repository*
-***local***		durch das klonen ist auch ein git-index vorhanden. ebenso ist eine **remote** Quelle vorhanden
-
-		git remote -v
-***lokal***		um an seiner aufgabe zu arbeiten erstellt man eine **branch** mit einem aussagekräftigen branchnamen
+		// main Inhalte aus dem repository sind nun lokal vorhanden
+***lokal***		um an seiner Aufgabe zu arbeiten erstellt man eine *branch* mit einem aussagekräftigen Branchnamen
 
 		git checkout -b *branch*
 		
-		(die *branch* sollte erkennen lassen was sie beinhaltet bzw an was gearbeitet wird)
-***lokal***		nach durchgeführten änderungen stellt man diese in die staging-area mit 	
+		// der Branchname sollte erkennen lassen was gearbeitet wird
+***lokal***		nach durchgeführten Änderungen stellt man diese in die staging-area mit 	
 		
 		git add *option*
 		
-		*option* "." für alles 
-		oder selektiv einzelne Dateienamen
-***lokal***		mit dem folgenden befehl kann man überprüfen ob die geänderten dateien im git-index aufgenommen wurden
+		// *option* "." für alles oder selektiv mit einzelnen Dateienamen
+***lokal***		mit dem folgenden Befehl kann man überprüfen ob die geänderten Dateien im git-index aufgenommen wurden
 
 		git status
-***lokal***		die im git-index vorhandenen inhalte werden mit dem folgenden befehl als _fertig_ bestätigt und somit in die staging-area verschoben
+***lokal***		die im git-index vorhandenen Inhalte werden mit dem folgenden Befehl als _fertig_ bestätigt und somit in die staging-area verschoben
 
 		git commit -m 'was wurde gemacht'
-***lokal***		um mögliche änderungen, während man gearbeitet hat, aus der branch **main** auf seinem lokalen rechner aktuell zu halten sollte man vor einem push in das repository folgenden befehl ausführen
+		
+		// mehr infos zu commit messages -> https://www.conventionalcommits.org/de/
+***lokal***		um mögliche Änderungen, während man gearbeitet hat, aus der Branch *main* auf seinem lokalen Rechner aktuell zu halten sollte man vor einem `git push` in das remote repository den folgenden Befehl ausführen
 
-		git pull origin main
-	
-		(anmerkung: dies kann zu konflikten führen die man dann lokal lösen muss, alleine oder im team,
-		"main" sollte als quelle vorrang haben)
-***lokal***		um die lokalen inhalte aus der staging-area in das remote repository zu übertragen wird folgender befehl benutzt
+	git pull origin main 
 
-		git push origin *branch*
-***online***	im browser auf github sollten nun unter ***git-url*** die inhalte in der **branch** auftauchen
+	// dies kann zu Konflikten führen die man dann lokal lösen muss, alleine oder im team
+	// "main" sollte als quelle vorrang haben
+***lokal***		um die lokalen Inhalte aus der staging-area in das remote repository zu übertragen wird folgender Befehl benutzt
 
-***online***	um die änderungen von **branch** in die branch **main** zu überführen ist ein merge request (pull request) von **branch** zu **main** nötig anmerkung: dieser kann zu konflikten führen
+	git push origin *branch*
+***online***	im Browser auf GitHub sollten nun unter `git-url` die Inhalte in der branch *branch* auftauchen
 
-***online***	falls es konflikte gibt müssen diese in einem review (alleine/team) gelöst werden
+***online***	um die Änderungen von *branch* in die branch *main* zu überführen ist ein `merge request (pull request)` von *branch* zu "main" nötig.  _Anmerkung_: dieser kann zu Konflikten führen.
 
-***online***	falls keine konflikte entstehen kann der merge direkt zu **main** durchgeführt werden und die anliefernde branch gelöscht werden. anmerkung: die lokale branch **branch** ist beim developer noch vorhanden!
+***online***	falls es Konflikte gibt müssen diese in einem review (alleine oder im Team) gelöst werden
+
+***online***	falls keine Konflikte entstehen kann der merge direkt zu "main" durchgeführt werden und die anliefernde branch gelöscht werden. _Anmerkung_: die lokale branch *branch* ist beim developer noch vorhanden!
 
 ## Change (developerA und developerB)
-***lokal***		arbeitsordner existiert lokal noch! diesen in vscode öffnen
+***lokal***		Arbeitsordner existiert lokal noch! diesen in vscode öffnen
 
-***lokal***		die lokalen dateien auf den neusten stand aus dem remote repository bringen mit 
+***lokal***		die lokalen Dateien auf den neusten stand aus dem remote repository bringen mit 
 
 		git pull origin main
-***lokal***		die gewollten änderungen durchführen und überprüfen welche dateien betroffen sind
+***lokal***		die gewollten Änderungen durchführen und überprüfen welche Dateien betroffen sind
 
 		git status
-***lokal***		die betroffenen dateien dem git-index hinzufügen mit
+***lokal***		die betroffenen Dateien dem git-index hinzufügen mit
 
 		git add *option*
 				
 		*option* "." für alles 
 		oder selektiv einzelne Dateienamen
-***lokal***		überprüfen ob die geänderten dateien im git-index aufgenommen wurden
+***lokal***		überprüfen ob die geänderten Dateien im git-index aufgenommen wurden
 
 		git status
-***lokal***		die im git-index vorhandenen inhalte werden mit dem folgenden befehl als _fertig_ bestätigt und somit in die staging-area verschoben
+***lokal***		die im git-index vorhandenen Inhalte werden mit dem folgenden Befehl als _fertig_ bestätigt und somit in die staging-area verschoben
 
 		git commit -m 'was wurde gemacht'
-***lokal***		um mögliche änderungen, während man gearbeitet hat, aus der branch **main** auf seinem lokalen rechner aktuell zu halten sollte man vor einem push in das repository folgenden befehl ausführen
+***lokal***		um mögliche Änderungen, während man gearbeitet hat, aus der branch *main* auf seinem lokalen Rechner aktuell zu halten sollte man vor einem push in das remote repository folgenden Befehl ausführen
 
-		git pull origin main 
+	git pull origin main 
 
-		(anmerkung: dies kann zu konflikten führen die man dann lokal lösen muss,"main" sollte als quelle vorrang haben)
-***lokal***		um die lokalen inhalte aus der staging-area in die **branch** des remote repository zu übertragen wird folgender befehl benutzt
+	// dies kann zu Konflikten führen die man dann lokal lösen muss
+	// "main" sollte als Quelle vorrang haben
+***lokal***		um die lokalen Inhalte aus der staging-area in das remote repository zu übertragen wird folgender Befehl benutzt
 
-		git push origin *branch*
-***online***	im browser auf github sollten nun die inhalte in der branch **branch** auftauchen
+	git push origin *branch*
+***online***	im Browser auf GitHub sollten nun die Inhalte in der branch *branch* auftauchen
 
-***online***	um die änderungen von  **branch** in die branch **main** zu überführen ist ein *merge request* (pull request) von **branch** zu **main** nötig anmerkung: dieser merge request kann zu konflikten führen
+***online***	um die Änderungen von  *branch* in die branch *main* zu überführen ist ein *merge request* (pull request) von *branch* zu *main* nötig. _Anmerkung_: dieser merge request kann zu Konflikten führen
 
-***online***	falls es konflikte gibt müssen diese in einem review (alleine/team) gelöst werden
+***online***	falls es Konflikte gibt müssen diese in einem review (alleine/team) gelöst werden
 
-***online***	falls keine konflikte entstehen kann der merge direkt zu "main" durchgeführt werden und die anliefernde branch gelöscht werden. anmerkung: die lokale **branch** ist beim developer noch vorhanden! beim nächsten push in die **branch** wird diese aber wieder im repository erstellt und sichtbar.
+***online***	falls keine Konflikte entstehen kann der merge direkt zu "main" durchgeführt werden und die anliefernde *branch* gelöscht werden. _Anmerkung:_ die lokale *branch* ist beim developer noch vorhanden! Beim nächsten push in die *branch* wird diese aber wieder im remote repository erstellt und sichtbar.
