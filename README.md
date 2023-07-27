@@ -12,7 +12,7 @@ Als Ausgangspunkt für dieses Helpfile dient die Annahme das es drei Zustände i
 	 - man lädt die Teammitglieder via Repository ein, dieser erhalten Infos für die Mitarbeit
 	 - jedes Teammitglied erstellt eine eigene branch
  3.  [CHANGE](#3-change)
-	- Anwendungsfall:**man soll nochmals mitarbeiten oder weiterarbeiten**
+	 - Anwendungsfall: **man soll nochmals mitarbeiten oder weiterarbeiten**
 	 - das Repository existiert auf GitHub
 	 - man hat bereits mitgearbeitet, dadurch kann Code lokal existieren, muss aber nicht
 	 - die vorherige branch kann noch existieren, muss aber nicht
