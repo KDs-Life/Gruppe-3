@@ -32,7 +32,7 @@
 		// die remote Referenzen kann man mit 'git remote -v' anzeigen
 ***lokal***		die lokalen Inhalte, die in der staging area sind, in das remote repository schieben mit 
 
-		git push -u -f origin main
+		git push origin main
 ***online***	im Browser sollten nun die Inhalte im GitHub Repository unter `git-url` erscheinen
 
 Nun die Collaborators zur Zusammenarbeit auf GitHub einladen und dabei Rechte vergeben.
