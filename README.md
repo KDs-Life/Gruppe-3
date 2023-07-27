@@ -1,10 +1,24 @@
-
-
-
-
 # Gruppe-3 HELPFILE
-## git workflow (wip)
-### Start as "repository owner" oder Teamlead
+Vielen dank
+## Der "git workflow" im Team (work in progress)
+Als Ausgangspunkt für dieses Helpfile dient die Annahme das es drei Zustände in der Zusammenarbeit via GitHub gibt:
+ 1. [START](#1-start)
+	- Anwendungsfall: **ein neues Projekt entsteht**
+	 - es gibt kein Repository auf GitHub
+	 - es kann Code existieren, der liegt aber nur lokal vor
+ 2. [COLLAB](#2-collab)
+	 - Anwendungsfall: **man sucht sich Mitstreiter fürs Team**
+	 - das Repository existiert auf GitHub
+	 - man lädt die Teammitglieder via Repository ein, dieser erhalten Infos für die Mitarbeit
+	 - jedes Teammitglied erstellt eine eigene branch
+ 3.  [CHANGE](#3-change)
+	- Anwendungsfall:**man soll nochmals mitarbeiten oder weiterarbeiten**
+	 - das Repository existiert auf GitHub
+	 - man hat bereits mitgearbeitet, dadurch kann Code lokal existieren, muss aber nicht
+	 - die vorherige branch kann noch existieren, muss aber nicht
+
+
+## 1. START
 
 ***online***	im Browser auf GitHub das Repository erstellen und die github-url `git-url` des erstellten Repository in die Zwischenablage kopieren (ssh)
 
@@ -39,7 +53,12 @@ Nun die Collaborators zur Zusammenarbeit auf GitHub einladen und dabei Rechte ve
 
 Aufgabe **Start** abgeschlossen
 
-## Collaborators (developerA und developerB)
+
+
+
+
+
+## 2. COLLAB
 
 ***lokal***		Arbeitsordner erstellen und in vscode öffnen
 
@@ -83,7 +102,7 @@ Aufgabe **Start** abgeschlossen
 
 ***online***	falls keine Konflikte entstehen kann der merge direkt zu "main" durchgeführt werden und die anliefernde branch gelöscht werden. _Anmerkung_: die lokale branch *branch* ist beim developer noch vorhanden!
 
-## Change (developerA und developerB)
+## 3. CHANGE
 ***lokal***		Arbeitsordner existiert lokal noch! diesen in vscode öffnen
 
 ***lokal***		die lokalen Dateien auf den neusten stand aus dem remote repository bringen mit 
